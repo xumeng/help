@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://landingpage.huglemon.com
+Host: https://help.amonxu.com
 
 # Sitemaps
-Sitemap: https://landingpage.huglemon.com/sitemap.xml
+Sitemap: https://help.amonxu.com/sitemap.xml
