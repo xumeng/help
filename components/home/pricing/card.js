@@ -1,6 +1,6 @@
 "use client";
-import { FaCheck, FaRedRiver, FaUndo } from "react-icons/fa";
-import { FaCheckToSlot } from "react-icons/fa6";
+import { FaCheck, FaRedRiver, FaCross } from "react-icons/fa";
+import { RxCheck, RxCheckCircled, RxCheckbox, RxCross1 } from "react-icons/rx";
 
 export default function PricingCard({ pricingItem = {} }) {
   return (
@@ -23,7 +23,7 @@ export default function PricingCard({ pricingItem = {} }) {
                 {Featureindex <= pricingItem.enableToIndex ? (
                   <FaCheck />
                 ) : (
-                  <FaRedRiver />
+                  <RxCross1 color="red" />
                 )}{" "}
                 {Featureindex <= pricingItem.enableToIndex ? (
                   <span style={{ color: "black" }}>{feature}</span>
