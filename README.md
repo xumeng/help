@@ -1,4 +1,4 @@
-![screenshot](https://help.gegegugu.com/images/screenshot.png)
+![screenshot](https://help.gegegugu.com/og.png)
 
 # [职业咨询服务](https://help.gegegugu.com/)
 
