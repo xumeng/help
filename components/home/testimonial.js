@@ -29,7 +29,11 @@ export default function Feature({ locale, langName = "zh" }) {
 
           <h4 className="w-full md:w-10/12 mx-auto text-xl md:text-2xl text-base-content/80 md:text-center">
             {locale.description1}
-            <a title="feedback" className="text-primary" href="#">
+            <a
+              title="真实评价"
+              className="text-primary"
+              href="mailto:gosuxm@gmail.com"
+            >
               {locale.description2}
             </a>
             {locale.description3}

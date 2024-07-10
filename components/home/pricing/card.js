@@ -1,8 +1,12 @@
 "use client";
 import { FaCheck } from "react-icons/fa";
 import { RxCross1 } from "react-icons/rx";
+import { useContext } from "react";
+import ThemeContext from "@/context/ThemeContext";
 
 export default function PricingCard({ pricingItem = {} }) {
+  const { theme } = useContext(ThemeContext);
+
   return (
     <div
       className={`w-full min-h-96 px-5 py-10 border-2 border-base-content rounded-xl flex flex-col items-center gap-2 transition-all duration-100 shadow-none hover:shadow-2xl bg-base-100 ${
@@ -26,9 +30,17 @@ export default function PricingCard({ pricingItem = {} }) {
                   <RxCross1 color="red" />
                 )}{" "}
                 {Featureindex <= pricingItem.enableToIndex ? (
-                  <span style={{ color: "black" }}>{feature}</span>
+                  <span
+                    style={{ color: theme === "business" ? "white" : "black" }}
+                  >
+                    {feature}
+                  </span>
                 ) : (
-                  <span style={{ color: "gray" }}>{feature}</span>
+                  <span
+                    style={{ color: theme === "business" ? "gray" : "gray" }}
+                  >
+                    {feature}
+                  </span>
                 )}
               </li>
             );
@@ -36,10 +48,10 @@ export default function PricingCard({ pricingItem = {} }) {
       </ul>
 
       <a
-        aria-label="choose plan"
-        title="choose plan"
+        aria-label="选择此计划"
+        title="选择此计划"
         href="#"
-        className="btn btn-wide bg-base-content text-base-100 hover:bg-base-100 hover:text-base-content rounded-full"
+        className="btn w-10/11 bg-base-content text-base-100 hover:bg-base-100 hover:text-base-content rounded-full"
       >
         选择此计划
       </a>

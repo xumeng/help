@@ -1,24 +1,24 @@
 {
   "Hero": {
-    "h1": "职生机, 职业生涯的导师伙伴",
-    "h2": "专注职业发展，学习软硬技能，上手实战。开启你的职业新篇章。"
+    "h1": "职生机 Help, 职业生涯的导师伙伴",
+    "h2": ""
   },
   "Feature": {
     "h2": "服务内容",
     "h3": "不花冤枉钱，不走冤枉路",
-    "description1": "出色的落地页模板。",
-    "description2": "基于Next.JS、DaisyUI、TailwindCSS和其他强大的库。",
-    "description3": "完全开源且完全免费。"
+    "description1": "",
+    "description2": "",
+    "description3": ""
   },
   "Pricing": {
-    "h2": "收费标准",
+    "h2": "定价收费",
     "h3": "根据您当前的需求状况",
     "description": "选择最适合您的计划。"
   },
   "Testimonial": {
     "h2": "服务评价",
     "h3": "这波真的走心了",
-    "description1": "用心服务好每一个客户，",
+    "description1": "用心服务好每一位客户，",
     "description2": "倾听心声",
     "description3": "，是客户、是朋友、更是合作伙伴。"
   },

@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://help.amonxu.com
+Host: https://help.gegegugu.com
 
 # Sitemaps
-Sitemap: https://help.amonxu.com/sitemap.xml
+Sitemap: https://help.gegegugu.com/sitemap.xml

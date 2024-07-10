@@ -2,9 +2,8 @@
 import HeroIcons from "./icons";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { SiGithub } from "react-icons/si";
-import { IoDocumentText } from "react-icons/io5";
-
+import { SiImessage } from "react-icons/si";
+import { RiMoneyCnyCircleLine } from "react-icons/ri";
 import { useEffect, useState } from "react";
 export default function Hero({ locale, CTALocale }) {
   const [tilt, setTilt] = useState(45);
@@ -55,28 +54,30 @@ export default function Hero({ locale, CTALocale }) {
             duration: 1,
           }}
         >
-          <h2 className="w-full md:w-10/12 mx-auto text-xl md:text-2xl text-base-content/80 md:text-center mb-5 md:mb-10">
-            {locale.h2}
+          <h2 className="w-full md:w-10/15 mx-auto text-xl md:text-2xl text-base-content/80 md:text-center mb-5 md:mb-10">
+            专注职业发展，学习软硬技能，上手实战
+            <br />
+            开启你的职业新篇章
           </h2>
 
           <div className="w-full md:w-8/12 mx-auto flex flex-col md:flex-row md:items-center justify-between gap-y-5">
-            <HeroIcons />
+            {/* <HeroIcons /> */}
 
             <div className="flex flex-col md:flex-row gap-2">
               <a
-                title="get source code"
+                title="立即联系"
                 className="btn btn-sm md:btn-md btn-base border-none hover:ring-1 ring-base-content text-base-100 hover:text-base-content bg-base-content hover:bg-base-100 rounded-full"
-                href="https://"
+                href="#cta"
               >
-                <SiGithub />
+                <SiImessage />
                 {CTALocale.btn1}
               </a>
               <a
-                title="get source code"
+                title="查看定价"
                 className="btn btn-sm md:btn-md btn-base rounded-full"
-                href="http://localhost:3000/zh#pricing"
+                href="#pricing"
               >
-                <IoDocumentText /> {CTALocale.btn2}
+                <RiMoneyCnyCircleLine /> {CTALocale.btn2}
               </a>
             </div>
           </div>

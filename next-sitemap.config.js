@@ -1,5 +1,5 @@
 module.exports = {
-  siteUrl: "https://help.amonxu.com",
+  siteUrl: "https://help.gegegugu.com",
   generateRobotsTxt: true,
   sitemapSize: 7000,
 };

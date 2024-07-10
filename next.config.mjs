@@ -4,7 +4,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "help.amonxu.com",
+        hostname: "help.gegegugu.com",
       },
     ],
   },

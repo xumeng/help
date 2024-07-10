@@ -7,16 +7,11 @@ import { useEffect, useState } from "react";
 
 export default function Footer() {
   const pathname = usePathname();
-  const [langName, setLangName] = useState(defaultLocale);
+  const langName = defaultLocale;
   const [linkList, setLinkList] = useState([]);
 
   useEffect(() => {
     const fetchLinksList = async () => {
-      if (pathname === "/") {
-        setLangName(defaultLocale);
-      } else {
-        setLangName(pathname.split("/")[1]);
-      }
       setLinkList(NavLinksList[`LINK_${langName.toUpperCase()}`] || []);
     };
     fetchLinksList();
@@ -27,10 +22,10 @@ export default function Footer() {
       <div className="max-w-[1024px] mx-auto flex flex-col md:flex-row justify-between items-center md:items-end gap-2 text-sm">
         <div className="flex flex-col items-center md:items-start">
           <a
-            aria-label="landing page template"
+            aria-label="职生机 Help"
             className="flex items-center mb-3"
-            title="landing page template"
-            href={`/${langName}`}
+            title="职生机 Help"
+            href="/"
           >
             <Image
               width={200}
@@ -39,16 +34,12 @@ export default function Footer() {
               className="transition-all hover:scale-110 w-6 md:w-10 h-6 md:h-10"
               alt="logo"
             ></Image>
-            <h2 className="ml-3 font-bold leading-5">职生机</h2>
+            <h2 className="ml-3 font-bold leading-5">职生机 Help</h2>
           </a>
           <div className="flex flex-wrap justify-center gap-x-2 md:gap-x-5 gap-y-1">
             {linkList.map((link, index) => {
               return (
-                <a
-                  key={index}
-                  title={link.name}
-                  href={`/${langName}${link.url}`}
-                >
+                <a key={index} title={link.name} href={`/${link.url}`}>
                   {link.name}
                 </a>
               );
@@ -58,10 +49,10 @@ export default function Footer() {
 
         <p>
           ©{" "}
-          <a title={"职生机"} href="https://help.amonxu.com" target="_blank">
+          <a title={"职生机"} href="https://help.gegegugu.com" target="_blank">
             职生机
           </a>{" "}
-          出品.
+          2024出品.
         </p>
       </div>
     </footer>

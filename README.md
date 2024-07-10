@@ -1,6 +1,6 @@
-![screenshot](https://help.amonxu.com/images/screenshot.png)
+![screenshot](https://help.gegegugu.com/images/screenshot.png)
 
-# [职业咨询服务](https://help.amonxu.com/)
+# [职业咨询服务](https://help.gegegugu.com/)
 
 ### 职业咨询服务包含哪些
 
