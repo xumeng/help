@@ -1,6 +1,6 @@
 "use client";
-import { FaCheck, FaRedRiver, FaCross } from "react-icons/fa";
-import { RxCheck, RxCheckCircled, RxCheckbox, RxCross1 } from "react-icons/rx";
+import { FaCheck } from "react-icons/fa";
+import { RxCross1 } from "react-icons/rx";
 
 export default function PricingCard({ pricingItem = {} }) {
   return (
