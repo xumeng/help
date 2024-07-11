@@ -2,7 +2,7 @@
 import TestimonialCard from "./testimonial/card";
 import { TestimonialsList } from "@/lib/testimonialsList";
 import { motion } from "framer-motion";
-import { MdFeedback } from "react-icons/md";
+import { RiUserVoiceFill } from "react-icons/ri";
 
 export default function Feature({ locale, langName = "zh" }) {
   let list = TestimonialsList[`TESTIMONIAL_${langName.toUpperCase()}`] || [];
@@ -18,7 +18,7 @@ export default function Feature({ locale, langName = "zh" }) {
         <div className="relative z-10 flex flex-col gap-5 items-start md:items-center mb-10 mx-auto">
           <div className="relative inline-flex items-center justify-center gap-2 border-2 border-base-content px-5 md:px-10 py-1 md:py-3 rounded-full text-lg md:text-2xl font-semibold overflow-hidden group">
             <div className="inline-flex items-center justify-center gap-2 z-10">
-              <MdFeedback /> <h2>{locale.h2}</h2>
+              <RiUserVoiceFill /> <h2>{locale.h2}</h2>
             </div>
             <div className="absolute w-0 h-full bg-base-content z-[0]"></div>
           </div>

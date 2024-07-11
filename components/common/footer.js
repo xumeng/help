@@ -25,7 +25,7 @@ export default function Footer() {
             aria-label="职生机 Help"
             className="flex items-center mb-3"
             title="职生机 Help"
-            href="/"
+            href="#"
           >
             <Image
               width={200}

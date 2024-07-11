@@ -27,7 +27,7 @@ export default function Navbar() {
         aria-label="职生机 Help"
         className="flex items-center w-1/2 md:w-1/5"
         title="职生机 Help"
-        href="/"
+        href="#"
       >
         <Image
           width={200}

@@ -2,9 +2,9 @@
 import HeroIcons from "./icons";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { SiImessage } from "react-icons/si";
 import { RiMoneyCnyCircleLine } from "react-icons/ri";
 import { useEffect, useState } from "react";
+import { BiMessageRoundedDots } from "react-icons/bi";
 export default function Hero({ locale, CTALocale }) {
   const [tilt, setTilt] = useState(45);
   const [duration, setDuration] = useState(0.8);
@@ -41,7 +41,7 @@ export default function Hero({ locale, CTALocale }) {
             damping: 10,
           }}
         >
-          <h1 className="font-bold text-5xl md:text-7xl bg-gradient-to-r from-base-content from-50% to-[#9c9c9c] text-center bg-clip-text text-transparent !leading-[1.25em] mb-5">
+          <h1 className="font-bold text-4xl md:text-7xl bg-gradient-to-r from-base-content from-50% to-[#9c9c9c] text-center bg-clip-text text-transparent !leading-[1.25em] mb-5">
             {locale.h1}
           </h1>
         </motion.div>
@@ -69,7 +69,7 @@ export default function Hero({ locale, CTALocale }) {
                 className="btn btn-sm md:btn-md btn-base border-none hover:ring-1 ring-base-content text-base-100 hover:text-base-content bg-base-content hover:bg-base-100 rounded-full"
                 href="#cta"
               >
-                <SiImessage />
+                <BiMessageRoundedDots size={22} />
                 {CTALocale.btn1}
               </a>
               <a
@@ -77,7 +77,7 @@ export default function Hero({ locale, CTALocale }) {
                 className="btn btn-sm md:btn-md btn-base rounded-full"
                 href="#pricing"
               >
-                <RiMoneyCnyCircleLine /> {CTALocale.btn2}
+                <RiMoneyCnyCircleLine size={22} /> {CTALocale.btn2}
               </a>
             </div>
           </div>

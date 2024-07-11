@@ -50,7 +50,7 @@ export default function PricingCard({ pricingItem = {} }) {
       <a
         aria-label="选择此计划"
         title="选择此计划"
-        href="#"
+        href="#cta"
         className="btn w-10/11 bg-base-content text-base-100 hover:bg-base-100 hover:text-base-content rounded-full"
       >
         选择此计划
