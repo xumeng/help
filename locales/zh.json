@@ -5,15 +5,15 @@
   },
   "Feature": {
     "h2": "服务内容",
-    "h3": "不花冤枉钱，不走冤枉路",
-    "description1": "",
+    "h3": "",
+    "description1": "不花冤枉钱，不走冤枉路",
     "description2": "",
     "description3": ""
   },
   "Pricing": {
-    "h2": "定价收费",
+    "h2": "服务方案",
     "h3": "根据您当前的需求状况",
-    "description": "选择最适合您的计划。"
+    "description": "选择最适合您的方案。"
   },
   "Testimonial": {
     "h2": "服务评价",
@@ -33,6 +33,6 @@
   },
   "CTAButton": {
     "btn1": "立即咨询",
-    "btn2": "了解定价"
+    "btn2": "了解方案"
   }
 }

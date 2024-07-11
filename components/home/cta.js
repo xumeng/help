@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { SiGithub } from "react-icons/si";
 import Image from "next/image";
 import WXIcon from "../../public/wx.svg";
 import MailIcon from "../../public/email.svg";

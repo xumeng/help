@@ -6,6 +6,7 @@ import Pricing from "@/components/home/pricing";
 import Testimonial from "@/components/home/testimonial";
 import Faq from "@/components/home/faq";
 import Cta from "@/components/home/cta";
+import FloatingContactInfo from "@/components/home/contact";
 
 export default async function Home({ params }) {
   const langName = defaultLocale;
@@ -19,6 +20,7 @@ export default async function Home({ params }) {
       <Testimonial locale={dict.Testimonial} langName={langName} />
       <Faq locale={dict.Faq} langName={langName} />
       <Cta locale={dict.CTA} CTALocale={dict.CTAButton} />
+      <FloatingContactInfo />
     </div>
   );
 }

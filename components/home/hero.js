@@ -73,7 +73,7 @@ export default function Hero({ locale, CTALocale }) {
                 {CTALocale.btn1}
               </a>
               <a
-                title="查看定价"
+                title={CTALocale.btn2}
                 className="btn btn-sm md:btn-md btn-base rounded-full"
                 href="#pricing"
               >

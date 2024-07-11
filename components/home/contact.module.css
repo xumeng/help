@@ -1,0 +1,55 @@
+/* FloatingContactInfo.module.css */
+.floatingContactInfo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px; /* 增加圆角 */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contactItem {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.contactItem:not(:last-child) {
+  border-bottom: 1px solid #ddd; /* 灰色分隔线 */
+  padding-bottom: 10px; /* 确保分隔线下方有足够的空间 */
+  margin-bottom: 10px;
+}
+
+.contactItem a {
+  display: flex;
+  align-items: center;
+  /* color: #007bff; */
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.contactItem a:hover {
+  color: #007bff; /* 当a标签获得焦点时的文字颜色 */
+}
+
+.icon {
+  margin-right: 5px; /* 为图标和文字之间添加间距 */
+  margin-left: 5px;
+  font-size: 1.2em; /* 根据需要调整图标大小 */
+  gap: 2px;
+}
+
+.icon:hover {
+  color: #007bff;
+}
+
+.focus,
+.focus a,
+.focus svg {
+  color: #007bff; /* 蓝色 */
+}
