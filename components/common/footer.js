@@ -53,6 +53,19 @@ export default function Footer() {
             职生机
           </a>{" "}
           2024出品.
+          <a
+            aria-label="职生机 Help"
+            className="flex items-center mt-2 gap-x-2 hover:scale-80"
+            href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral"
+          >
+            <Image
+              width={69}
+              height={30}
+              src={"/upyun.png"}
+              alt="upyun logo"
+            ></Image>
+            提供CDN加速/云存储服务
+          </a>
         </p>
       </div>
     </footer>
